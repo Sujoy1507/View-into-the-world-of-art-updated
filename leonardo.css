@@ -1,0 +1,103 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #4C191B;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Page Title */
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #222;
+}
+
+/* Mona Lisa Section */
+.art-detail {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.art-image {
+    flex: 1 1 300px;
+    max-width: 400px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.art-description {
+    flex: 2 1 400px;
+    font-size: 1rem;
+    color: #444;
+}
+
+.art-description p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .art-detail {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .art-image {
+        margin: 0 auto;
+    }
+}
+
+
+.wiki-link {
+    display: inline-block;
+    background-color: #4C191B;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.wiki-link:hover {
+    background-color: #6E2C2F;
+}
+
+/* Centering container */
+.link-container {
+    text-align: center;
+}

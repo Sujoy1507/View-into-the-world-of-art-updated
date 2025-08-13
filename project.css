@@ -1,0 +1,153 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Nav Styling */
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    border: 3px solid #A89B8C;
+    border-radius: 30px;
+    background-color: #8F5C38;
+    margin: 0.5%;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #000000;
+    padding: 5px 20px;
+    background-color: #F0DFAD;
+    border-radius: 10px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: #d9c48d;
+    transform: scale(1.05);
+}
+
+/* Headings */
+h1 {
+    font-size: clamp(50px, 8vw, 150px);
+    text-align: center;
+    font-weight: 900;
+    letter-spacing: 15px;
+    word-spacing: 30px;
+    color: #4A5043;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: clamp(30px, 5vw, 80px);
+    font-weight: 100;
+    text-align: center;
+    color: #837A75;
+    margin-bottom: 40px;
+}
+
+/* Project Cards */
+main {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.project-card {
+    padding: 30px;
+    border: 3px solid #A89B8C;
+    border-radius: 20px;
+    width: 280px;
+    text-align: center;
+    font-size: 1rem;
+    color: white;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 15px;
+    background-color: #F0DFAD;
+    color: #000;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.project-card a:hover {
+    background-color: #d9c48d;
+}
+
+.project-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+}
+
+/* Different colors for each card */
+.card1 {
+    background-color: #8F5C38;
+}
+
+.card2 {
+    background-color: #4A5043;
+}
+
+.card3 {
+    background-color: #837A75;
+}
+
+/* GitHub Section */
+.github-section {
+    background-color: #4A5043;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 40px;
+    border-top: 3px solid #A89B8C;
+}
+
+.github-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #F0DFAD;
+    color: #000;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.github-btn:hover {
+    background-color: #d9c48d;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: #ddd;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        margin: 5px 0;
+    }
+}
